@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why I'm Building CarbonLens - Sharanya Vats</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        .post-content {
+            background: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        
+        .post-meta {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 35px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+        }
+        
+        h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .links {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+        }
+        
+        .links p {
+            font-size: 1em;
+            line-height: 2;
+        }
+        
+        @media (max-width: 600px) {
+            .post-content {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Blog</a>
+        
+        <article class="post-content">
+            <h1>Why I'm Building CarbonLens</h1>
+            <div class="post-meta">December 22, 2025 | By Sharanya Vats</div>
+            
+            <p>
+                I'm a high school sophomore who has spent several hours so far building CarbonLens - 
+                a tool that calculates how much CO₂ your AI usage generates.
+            </p>
+            
+            <h2>The Problem</h2>
+            <p>
+                Last month, I learned that training GPT-3 generated 552 tons of CO₂. 
+                That's equivalent to driving 1.2 million miles.
+            </p>
+            
+            <p>
+                But here's what nobody talks about: What about USING AI every day?
+            </p>
+            
+            <p>
+                Billions of people use ChatGPT, Claude, Midjourney. Every query, every 
+                image generation, every conversation consumes energy and generates emissions. 
+                What's the cumulative impact of all those queries?
+            </p>
+            
+            <p>
+                I couldn't find a simple answer. Most research focuses on training costs, 
+                not inference costs. So I decided to build something myself.
+            </p>
+            
+            <h2>The Solution</h2>
+            <p>
+                CarbonLens makes AI's environmental impact visible and understandable.
+            </p>
+            
+            <p>
+                Here's how it works:
+            </p>
+            
+            <p>
+                1. You tell it which AI tool you used (ChatGPT, Claude, Midjourney, etc.)<br>
+                2. You tell it how many minutes you used it<br>
+                3. It calculates your CO₂ emissions<br>
+                4. It shows equivalents you can understand - phone charges, driving distance, trees needed to offset
+            </p>
+            
+            <p>
+                Version 1 is simple. It's not perfect. But it works.
+            </p>
+            
+            <h2>What I Learned</h2>
+            <p>
+                Building CarbonLens taught me several things:
+            </p>
+            
+            <p>
+                First, the data is surprisingly hard to find. While training emissions are 
+                well-documented, inference emissions vary wildly based on model architecture, 
+                hardware, and grid carbon intensity.
+            </p>
+            
+            <p>
+                Second, the scale is staggering. If ChatGPT's 100 million users each spent 
+                just 10 minutes per day using it, that's roughly 50 tons of CO₂ daily - or 
+                18,000 tons per year. And that's just one AI tool.
+            </p>
+            
+            <p>
+                Third, people care when they can see the impact. Abstract numbers like "0.5g per minute" 
+                don't resonate. But "equivalent to charging 6 smartphones" does.
+            </p>
+            
+            <h2>What's Next</h2>
+            <p>
+                This is just Version 1. I'm planning to add:
+            </p>
+            
+            <p>
+                • User accounts to track emissions over time<br>
+                • More AI tools and more accurate data<br>
+                • Chrome extension for automatic tracking<br>
+                • Comparison tools to see how different models compare<br>
+                • Integration with actual power grid data for real-time carbon intensity
+            </p>
+            
+            <p>
+                My ultimate goal: Make every AI user aware of their environmental impact 
+                and empower them to make more sustainable choices.
+            </p>
+            
+            <h2>The Bigger Picture</h2>
+            <p>
+                I'm a sophomore planning to study computational environmental science. 
+                I want to work at NASA as an environmental scientist for space exploration.
+            </p>
+            
+            <p>
+                CarbonLens connects to this mission: Whether analyzing AI's water consumption 
+                on Earth or studying radiation in space, we need to understand the environmental 
+                impacts of our technology.
+            </p>
+            
+            <p>
+                This is my first step in that direction.
+            </p>
+            
+            <div class="links">
+                <p>
+                    <strong>Try CarbonLens:</strong> [link when ready]<br>
+                    <strong>GitHub:</strong> <a href="https://github.com/sharanyavats/carbonlens" target="_blank">github.com/sharanyavats/carbonlens</a><br>
+                    <strong>Feedback welcome:</strong> sharanyakvats@gmail.com
+                </p>
+            </div>
+        </article>
+        
+        <a href="../index.html" class="back-link">← Back to Blog</a>
+    </div>
+</body>
+</html>
